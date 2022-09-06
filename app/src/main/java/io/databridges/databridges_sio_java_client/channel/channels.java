@@ -47,7 +47,7 @@ public class channels {
     private Map<String , String> _channelname_sid;
     private dBridges _dbcore;
     private dispatcher _dispatch;
-    private static String regex = "^[a-zA-Z0-9@$&-.+:]*$";
+    private static String regex = "^[a-zA-Z0-9.:_-]*$";
     private static Pattern pattern;
     public channels(dBridges dBCoreObject){
         this._channelsid_registry=new HashMap<>();

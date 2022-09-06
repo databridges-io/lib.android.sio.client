@@ -53,7 +53,7 @@ public class cRpc {
     private Map<String , Object>  callersid_object;
     private static String[] server_type = {"pvt", "prs", "sys"};
 
-    private static String regex = "^[a-zA-Z0-9@$&-.+:]*$";
+    private static String regex = "^[a-zA-Z0-9.:_-]*$";
     private static Pattern pattern;
 
 
