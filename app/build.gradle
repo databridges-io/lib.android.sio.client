@@ -46,7 +46,7 @@ publishing {
     publications {
         release(MavenPublication) {
             groupId 'io.databridges'
-            version '2.0.3'
+            version '2.0.4'
             artifactId 'databridges_sio_java_client'
             artifact("$buildDir/outputs/aar/app-release.aar")
 

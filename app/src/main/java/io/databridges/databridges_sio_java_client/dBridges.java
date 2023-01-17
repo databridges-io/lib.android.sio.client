@@ -654,7 +654,16 @@ public class dBridges{
                         this.ClientSocket.disconnect();
                         break;
                     default:
-                        this.connectionstate._handledispatcher(states.ERROR, this.mBufferToString(payload));
+                       // this.connectionstate._handledispatcher(states.ERROR, this.mBufferToString(payload));
+                        dBError dberr = new dBError("E082");
+
+                        try {
+                            mpayload = (payload.length > 0 )? this.mBufferToString(payload) : "";
+                        } catch (Exception error) {
+                            mpayload = "";
+                        }
+                        dberr.updatecode(subject, mpayload);
+                        this.connectionstate._handledispatcher(states.ERROR, dberr);
                         break;
                 }
 

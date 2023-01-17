@@ -60,7 +60,7 @@ The dataBridges client is available in the Maven central repository, and can be 
 
 ```java
 dependencies {
-    implementation 'io.databridges:databridges_sio_java_client:2.0.3'
+    implementation 'io.databridges:databridges_sio_java_client:2.0.4'
 }
 ```
 
