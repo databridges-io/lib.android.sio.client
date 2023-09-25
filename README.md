@@ -715,7 +715,7 @@ dbridge.channel.bind(event , new eventHandler() {
     "sourcesysid": "", 					// (string) Sender system identity, applicable only for presence or system channel.
     "sqnum": "1",						// (string) user defined, sent during publish function.
     "sessionid": "", 					// (string) Sender sessionid, applicable only for presence or system channel.
-    "intime": 1645554960732  			// (string) EPOC time of the sender at time of publish.
+    "intime": 25  						// (int) Intime is a metric that quantifies the routing latency within the messaging infrastructure, specifically within the context of the messaging platform. It measures the time it takes for an event message to traverse from the moment it is received by the messaging  to the instant it is dispatched to the subscriber(s) of the event. InTime is expressed in milliseconds (ms) and serves as a crucial indicator of the efficiency and responsiveness of the messaging system. This metric Not applicable for system events.
 }
 ```
 
@@ -839,7 +839,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) Sender system identity, applicable only for presence or system channel.
     "sqnum": "1",						// (string) user defined, sent during publish function.
     "sessionid": "", 					// (string) Sender sessionid, applicable only for presence or system channel.
-    "intime": 1645554960732  			// (string) EPOC time of the sender at time of publish.
+    "intime": null  
 }
 ```
 
@@ -866,7 +866,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": null  
 }
 ```
 
@@ -887,7 +887,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": 	null  
 }
 ```
 
@@ -908,7 +908,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": 	null  
 }
 ```
 
@@ -929,7 +929,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": 	 null  
 }
 ```
 
@@ -950,7 +950,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": 	null  
 }
 ```
 
@@ -977,7 +977,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": 	null  
 }
 ```
 
@@ -998,7 +998,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": 	null  
 }
 ```
 
@@ -1025,7 +1025,7 @@ dbridge.channel.bind_all("dbridges:subscribe.success" , new eventHandler() {
     "sourcesysid": "", 					// (string) 
     "sqnum": "",						// (string) 
     "sessionid": "", 					// (string) 
-    "intime": 	  						// (string) 
+    "intime": null  
 }
 ```
 
@@ -1056,7 +1056,7 @@ This will be triggered only for **presence** `(prs:)` and **system** `(sys:)` ch
     "sourcesysid": "nameofcaller", 			// (string) Sys id of the member who has subscribed/connected to channel
     "sqnum": null,							// (string) 
     "sessionid": "ydR27s3Z92yQw7wjGY2lX", 	// (string) Session id of the member who has subscribed/connected to channel
-    "intime": null	  						// (string) 
+    "intime": null  
 }
 ```
 
@@ -1087,7 +1087,7 @@ This will be triggered only for **presence** `(prs:)` and **system** `(sys:)` ch
     "sourcesysid": "nameofcaller", 			// (string) Sys id of the member who has subscribed/connected to channel
     "sqnum": null,							// (string) 
     "sessionid": "ydR27s3Z92yQw7wjGY2lX", 	// (string) Session id of the member who has subscribed/connected to channel
-    "intime": null	  						// (string) 
+    "intime": null  
 }
 ```
 
